@@ -1,4 +1,3 @@
-# web_dien_thoai_di_dong
 <?php
 class DATABASE{
     private static $dns = "mysql:host=localhost;dbname=shop;port=3306";
