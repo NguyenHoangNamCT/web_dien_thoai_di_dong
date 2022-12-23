@@ -12,6 +12,7 @@ class DONHANG
 					VALUES(:nguoidung_id,:diachi,:tongtien)";
             $cmd = $db->prepare($sql);
             $cmd->bindValue(':nguoidung_id', $nguoidung_id);
+            $cmd->bindValue(':diachi', $diachi_id);
             $cmd->bindValue(':tongtien', $tongtien);
             $cmd->execute();
             $id = $db->lastInsertId();
