@@ -12,6 +12,7 @@ class DONHANGCT{
 			$cmd->bindValue(':mathang_id',$mathang_id);
 			$cmd->bindValue(':dongia',$dongia);
 			$cmd->bindValue(':soluong',$soluong);
+			$cmd->bindValue(':thanhtien',$thanhtien);
 			$cmd->execute();
 			$id = $db->lastInsertId();
 			return $id;
